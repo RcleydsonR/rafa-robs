@@ -1,8 +1,12 @@
-def fatorial(qtd):
-    if(qtd <= 0):
+def fibonacci(n):
+    if n==1:
+        return 1
+    elif n==2:
         return 1
     else:
-        return qtd * fatorial(qtd-1)
+        return fibonacci(n-1) + fibonacci(n-2)
+        
+n = int(input('Quantos termos do fibonacci deseja ver: '))
 
-num = int(input('Digite o num que deseja fatorar:'))
-print(fatorial(num))
+for val in range(1, n+1):
+    print(fibonacci(val))
