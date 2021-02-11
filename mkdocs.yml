@@ -3,7 +3,7 @@ site_description: Repositório da disciplina de MDS
 repo_url: https://github.com/RcleydsonR/rafa-robs.git
 
 theme:
-    name: material
+    name: readthedocs
 
 plugins:
     - search
