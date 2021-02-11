@@ -1,18 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Isso é um teste</title>
-	<style>
-	.paragrafo{
-		backgroud-color: red;
-		font-size: 50px;
-		font-color: #ff0000;
-	}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel= "stylesheet" href="css/style.css">
+
+	<title>Document</title>
 </head>
-
 <body>
-<h1>Teste</h1>
-<p class= "paragrafo">terca feira</p>
-</body>
+	<div id = "root"></div>
+	<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+	<script type ="text/babel">
+		ReactDOM.render(
+			<p>
+			<button>Zero</button>
+			<button>Git</button>
+			<button>Lubuntu</button>
+			<button>Pato</button>
+			</p>
+			,document.getElementById("root")
+		);
+
+	</script>
+</body>
 </html>
