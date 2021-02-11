@@ -2,10 +2,9 @@
 
 int main(){
 	char nome[50];
-	
-	scanf("Insira seu nome %s", %nome);
+	printf("Digite seu nome: ");
+	scanf("%s", nome);
 
-	printf("%s não é nada legal", nome);
-
+	printf("%s não é nada legal\n", nome);
 return 0;
 }
