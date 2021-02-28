@@ -1,9 +1,11 @@
 version: '3.7'
 services:
-    banco:
-        image: mysql
-        container_name: mysql-container
+    db:
+        build:
+            ./backend
+        container_name: container-mysql
         command: --default-authentication-plugin=mysql_native_password
-        environment:
-            MYSQL_ROOT_PASSWORD: root
+        volumes:
+            - ./backend/data:/var/lib/mysql
+
     
